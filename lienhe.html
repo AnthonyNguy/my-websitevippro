@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar 2 dòng</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #1f6bff;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+
+    /* Dòng trên: logo + menu + đăng nhập */
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-section img {
+      height: 40px;
+    }
+
+    .logo-section span {
+      color: #ffffffcc;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .auth-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .auth-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .auth-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dòng dưới: thanh tìm kiếm */
+    .navbar-bottom {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-box {
+      background-color: #d8d8d8;
+      border-radius: 10px;
+      padding: 8px 12px;
+      width: 40%;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      background: transparent;
+      width: 100%;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <!-- Dòng 1 -->
+    <div class="navbar-top">
+      <div class="logo-section">
+        <img src="https://i.imgur.com/y7N0XNU.png" alt="logo">
+        <span>Phone<span style="color: cyan;">24h</span></span>
+      </div>
+
+      <div class="menu">
+        <a href="#">Trang Chủ</a>
+        <a href="#">Giới Thiệu</a>
+        <a href="#">Dịch Vụ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Góp ý</a>
+      </div>
+
+      <div class="auth-links">
+        <a href="#">Liên Hệ</a>
+        <a href="#">Đăng nhập</a>
+      </div>
+    </div>
+
+    <!-- Dòng 2 -->
+    <div class="navbar-bottom">
+      <div class="search-box">
+        <input type="text" placeholder="Tìm Kiếm....">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
